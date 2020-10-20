@@ -3,6 +3,25 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="triangle" class="Triangle" />
+    <bean id="triangle" class="Triangle" >
+        <property name="pointA" ref="zeroPoint" />
+        <property name="pointB" ref="onePoint" />
+        <property name="pointC" ref="twoPoint" />
+    </bean>
+
+    <bean id="zeroPoint" class="Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0" />
+    </bean>
+
+    <bean id="onePoint" class="Point">
+        <property name="x" value="5"/>
+        <property name="y" value="-20" />
+    </bean>
+
+    <bean id="twoPoint" class="Point">
+        <property name="x" value="4"/>
+        <property name="y" value="20" />
+    </bean>
 
 </beans>
