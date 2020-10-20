@@ -3,6 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="triangle" class="Triangle" />
+    <bean id="triangle" class="Triangle" >
+<!--        <constructor-arg value="scaline" />-->
+<!--        <constructor-arg type="java.lang.String" value ="45" />-->
+        <constructor-arg index="0" value="equalateral" />
+        <constructor-arg index="1" value="55" />
+    </bean>
 
 </beans>
